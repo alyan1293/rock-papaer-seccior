@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.nav {
+    height: 100px;
+    background-color: rgb(128, 79, 174);
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 0 0 3px #FF0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main Container */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Choices Section */
+.choices {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.choice {
+    margin: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.choice:hover {
+    border-radius: 100px;
+    background: rgb(128, 79, 174);
+}
+
+.choice img {
+    height: 150px;
+    background: #f2f2f2;
+    padding: 40px;
+    border-radius: 500px;
+    align-items: center;
+}
+
+/* Score Section */
+.count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.counts {
+    font-size: 50px;
+    font-family: sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+.nmbr {
+    font-size: 80px;
+}
+
+/* Message Box */
+#msg {
+    text-align: center;
+    margin-top: 40px;
+    width: 300px;
+    background-color: rgb(128, 79, 174);
+    font-size: 40px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .nav {
+        font-size: 40px;
+        height: 80px;
+    }
+    .choice img {
+        height: 120px;
+        padding: 30px;
+    }
+    .counts {
+        font-size: 40px;
+    }
+    .nmbr {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        font-size: 35px;
+        height: 70px;
+    }
+    .choice img {
+        height: 100px;
+        padding: 25px;
+    }
+    .counts {
+        font-size: 35px;
+    }
+    .nmbr {
+        font-size: 50px;
+    }
+    #msg {
+        font-size: 30px;
+        width: 250px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        font-size: 28px;
+        height: 60px;
+    }
+    .choice img {
+        height: 80px;
+        padding: 20px;
+    }
+    .counts {
+        font-size: 28px;
+    }
+    .nmbr {
+        font-size: 40px;
+    }
+    #msg {
+        font-size: 25px;
+        width: 220px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav {
+        font-size: 24px;
+        height: 50px;
+    }
+    .choice img {
+        height: 70px;
+        padding: 15px;
+    }
+    .counts {
+        font-size: 24px;
+    }
+    .nmbr {
+        font-size: 30px;
+    }
+    #msg {
+        font-size: 20px;
+        width: 200px;
+        padding: 10px;
+    }
+}
